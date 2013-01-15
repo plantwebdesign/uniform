@@ -1,12 +1,12 @@
 /*
 
-Uniform Theme: Aristo
-Version: 1.1
-By: 280North / Ported by Josh Pyles
-License: Creative Commons Share Alike
+Uniform Theme: Agent
+Version: 1.0
+By: Collin Allen
+License: MIT
 ---
 For use with the Uniform plugin:
-http://uniformjs.com/
+http://pixelmatrixdesign.com/uniform/
 
 */
 /* General settings */
@@ -18,7 +18,7 @@ div.uploader,
 div.uploader span.action,
 div.button,
 div.button span {
-  background-image: url("../images/sprite-aristo.png");
+  background-image: url("../images/sprite-agent.png");
   background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased; }
 
@@ -53,7 +53,7 @@ div.button span {
   padding: 0; }
 
 .highContrastDetect {
-  background: url("../images/bg-input-aristo.png") repeat-x 0 0;
+  background: url("../images/bg-input-agent.png") repeat-x 0 0;
   width: 0px;
   height: 0px; }
 
@@ -75,7 +75,7 @@ input.password,
 select.uniform-multiselect,
 textarea.uniform {
   padding: 4px;
-  background: url("../images/bg-input-aristo.png") repeat-x 0 0;
+  background: url("../images/bg-input-agent.png") repeat-x 0 0;
   outline: 0; }
 
 /* Remove default webkit and possible mozilla .search styles */
@@ -101,14 +101,14 @@ input.color:focus,
 input.password:focus,
 select.uniform-multiselect:focus,
 textarea.uniform:focus {
-  background: url("../images/bg-input-focus-aristo.png") repeat-x 0 0; }
+  background: url("../images/bg-input-agent-focus.png") repeat-x 0 0; }
 
 /* Select */
 div.selector {
   background-position: 0 -160px;
   line-height: 32px;
   height: 32px;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 12px;
   position: relative;
   overflow: hidden; }
 
@@ -129,7 +129,7 @@ div.selector span {
   display: block; }
 
 div.selector.fixedWidth span {
-  width: 155px; }
+  width: 153px; }
 
 div.selector select {
   opacity: 0;
@@ -138,7 +138,7 @@ div.selector select {
   border: none;
   background: none;
   position: absolute;
-  height: 24px;
+  height: 25px;
   top: 4px;
   left: 0px;
   width: 100%; }
@@ -351,9 +351,9 @@ div.uploader span.filename {
   white-space: nowrap;
   float: left;
   cursor: default;
-  height: 24px;
-  margin: 4px 0 4px 4px;
-  line-height: 24px;
+  height: 32px;
+  margin: 0px 0 0px 4px;
+  line-height: 32px;
   width: 76px;
   padding: 0 10px; }
 
@@ -418,7 +418,7 @@ div.button span {
   line-height: 1;
   text-align: center;
   background-position: right -622px;
-  height: 22px;
+  height: 24px;
   margin-left: 13px;
   padding: 9px 15px 0 2px; }
 
@@ -459,7 +459,6 @@ div.button:disabled span {
   background-position: right -718px;
   cursor: default; }
 
-/* INPUT & TEXTAREA */
 input.text,
 input.email,
 input.search,
@@ -479,12 +478,12 @@ textarea.uniform {
   font-size: 14px;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: normal;
-  color: #777;
-  background-color: #a1cbe2;
-  border-top: solid 1px #aaa;
-  border-left: solid 1px #aaa;
-  border-bottom: solid 1px #ccc;
-  border-right: solid 1px #ccc;
+  color: #ffffff;
+  background-color: #434343;
+  border-top: solid 1px #1a1a1a;
+  border-left: solid 1px #1a1a1a;
+  border-bottom: solid 1px #1c1c1c;
+  border-right: solid 1px #1c1c1c;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
@@ -505,13 +504,15 @@ input.color:focus,
 input.password:focus,
 select.uniform-multiselect:focus,
 textarea.uniform:focus {
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
   border-color: #999;
-  background-color: #a1cbe2; }
+  background-color: #575757; }
 
-/* Uploader */
+div.button span {
+  color: #ffffff; }
+
 div.button span {
   font-weight: bold;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -519,16 +520,12 @@ div.button span {
   letter-spacing: 1px;
   text-transform: uppercase; }
 
-div.button:active span {
-  color: #555; }
-
 div.button.disabled span {
   color: #bbb; }
 
 /* Separate from above due to IE8 */
 div.button:disabled span {
-  color: #bbb;
-  cursor: default; }
+  color: #bbb; }
 
 /* Select */
 div.selector {
@@ -542,7 +539,9 @@ div.selector select {
   border: solid 1px #fff; }
 
 div.selector span {
-  color: #666;
+  padding: 0 25px 0 0;
+  color: #fff;
+  font-weight: normal;
   text-shadow: 0 1px 0 #fff; }
 
 div.selector.disabled span {
@@ -556,11 +555,17 @@ div.checker {
 div.radio {
   margin-right: 10px; }
 
+/* Uploader */
+div.uploader {
+  margin-bottom: 20px;
+  cursor: pointer; }
+
 div.uploader span.action {
-  text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+  text-align: center;
+  text-shadow: #1a1a1a 0px 1px 0px;
   background-color: #fff;
   font-weight: bold;
-  color: #1c4257; }
+  color: #ffffff; }
 
 div.uploader span.filename {
   color: #777;
