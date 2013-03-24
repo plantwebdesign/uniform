@@ -3,11 +3,12 @@
 (function () {
 	'use strict';
 	$(function () {
+		$("#theme").val(window.theme);
 		$("#theme").change(function () {
 			this.form.submit();
 			return false;
 		});
-		$("#docs h3").click(function () {
+		$("#docs h3").addClass('link').click(function () {
 			$(this).nextUntil('h3').slideToggle();
 			return false;
 		}).nextUntil('h3').toggle();
