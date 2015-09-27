@@ -2,7 +2,7 @@
   "name": "Uniform.js",
   "version": "2.1.2",
   "homepage": "http://uniformjs.com",
-  "main": "jquery.uniform.js",
+  "main": ["jquery.uniform.js"],
   "ignore": [
 	"demo",
     "theme-kit",
