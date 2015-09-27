@@ -4,10 +4,10 @@
   "homepage": "http://uniformjs.com",
   "main": "jquery.uniform.js",
   "ignore": [
-	"**/.*",
-	"node_modules",
-	"bower_components",
-	"test",
-	"tests"
+	"demo",
+    "theme-kit",
+    "themes",
+    "www",
+    "www-fragments"
   ]
 }
